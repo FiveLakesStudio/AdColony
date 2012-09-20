@@ -1,10 +1,10 @@
 ADCOLONY PREMIUM MOBILE VIDEO ADVERTISING NETWORK
 --------------------------------------------------
-Modified: 04/02/2012
-SDK Version: 1.9.9
+Modified: 06/26/2012
+SDK Version: 1.9.11
 
 
-AdColony 1.9.9 SDK Package Contents:
+AdColony 1.9.11 SDK Package Contents:
 ---------------------------------------
 1. AdColonyLibrary (iOS)
 	a. AdColonyPublic.h
@@ -21,13 +21,22 @@ AdColony 1.9.9 SDK Package Contents:
 Getting Started with AdColony:
 ----------------------------------
 First time and returning users should review the AdColony SDK Quick Start Guide, as the AdColony API has been changed (Please refer to the change log for details). 
-This file is available as a PDF in the "Documentation" folder and contains everything you need to start integrating AdColony into your app quickly.   
+This file is available as a PDF in the "Documentation" folder and contains everything you need to start integrating AdColony into your app quickly.
 
+1.9.11 Summary Change Log:
+----------------------------------
+Details can also be found in the AdColonySDKQuickStartGuide.pdf under "Changes"
+
+-AdColony SDK improvements for more efficient client-server communication
+
+1.9.10 Summary Change Log:
+----------------------------------
+-AdColony will now report additional analytics information regarding app installs.
+-AdColony now additionally provides Apple's unique device identifier (UDID) and the Open Device Identification Number (ODIN1) for device identification. This will affect applications that use AdColony's V4VC system in a server-based configuration. If affected, please review the Quick Start Guide.
+-One method, getODIN1 has been added to the AdColony class to access the device's ODIN1.
 
 1.9.9 Summary Change Log:
 ----------------------------------
-Details can also be found in the AdColonyQuickStartGuide.pdf under "Changes"
-
 -AdColony now additionally provides the device's OpenUDID for device identification. This will affect applications that use AdColony's V4VC system in a server-based configuration. If affected, please review the Quick Start Guide.
 -One method,  getOpenUDID has been added to the AdColony class to access the device's OpenUDID.
 
