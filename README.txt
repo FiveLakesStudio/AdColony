@@ -1,10 +1,10 @@
 ADCOLONY PREMIUM MOBILE VIDEO ADVERTISING NETWORK
 --------------------------------------------------
-Modified: 06/26/2012
-SDK Version: 1.9.11
+Modified: 2013/01/09
+SDK Version: 2.0.1.32
 
 
-AdColony 1.9.11 SDK Package Contents:
+AdColony SDK 2.0 Package Contents:
 ---------------------------------------
 1. AdColonyLibrary (iOS)
 	a. AdColonyPublic.h
@@ -13,20 +13,33 @@ AdColony 1.9.11 SDK Package Contents:
 	a. AdColonySDKQuickStartGuide.pdf
 	b. W-9 Form.pdf
 3. Sample Apps
-	a. AdColonyAdvancedApp
-	b. AdColonyBasicApp
-	c. AdColonyCurrencyApp
-
+	a. AdColonyAdvanced
+	b. AdColonyBasic
+	c. AdColonyV4VC
 	
 Getting Started with AdColony:
 ----------------------------------
-First time and returning users should review the AdColony SDK Quick Start Guide, as the AdColony API has been changed (Please refer to the change log for details). 
+First time and returning users should review the AdColony SDK Quick Start Guide, as the AdColony API has been changed (please refer to the change log for details). 
 This file is available as a PDF in the "Documentation" folder and contains everything you need to start integrating AdColony into your app quickly.
+
+2.0 Summary Change Log:
+----------------------------------
+Details can be found in the AdColonySDKQuickStartGuide.pdf under "Changes"
+
+-Support for Xcode 4.5, iOS 6.0, iPhone 5, and new "Limit Ad Tracking" setting
+-Removed support for armv6 architecture devices
+-Requires Automatic Reference Counting (ARC) for AdColony library (or whole project)
+-Numerous bug fixes, stability improvements and performance gains
+-Built-in support for multiple video views per V4VC reward
+-Can collect per-user metadata that unlocks higher-value ads
+-New sample applications
+-Simplified interface for apps that need to cancel an ad in progress
+-Simplified interface for apps that need custom user IDs for server-side V4VC transactions
+-Improved log messages for easier debugging
+
 
 1.9.11 Summary Change Log:
 ----------------------------------
-Details can also be found in the AdColonySDKQuickStartGuide.pdf under "Changes"
-
 -AdColony SDK improvements for more efficient client-server communication
 
 1.9.10 Summary Change Log:
@@ -38,7 +51,7 @@ Details can also be found in the AdColonySDKQuickStartGuide.pdf under "Changes"
 1.9.9 Summary Change Log:
 ----------------------------------
 -AdColony now additionally provides the device's OpenUDID for device identification. This will affect applications that use AdColony's V4VC system in a server-based configuration. If affected, please review the Quick Start Guide.
--One method,  getOpenUDID has been added to the AdColony class to access the device's OpenUDID.
+-One method, getOpenUDID has been added to the AdColony class to access the device's OpenUDID.
 
 
 1.9.8 Summary Change Log:
@@ -80,7 +93,7 @@ Included are three sample apps to use as examples and for help on AdColony integ
 
 Legal Requirements:
 ----------------------------------
-You must accept the terms and conditions on the AdColony website by registering in order to legally use the AdColony SDK. U.S. based companies will need to complete the W-9 form and send it to us before payments can be issued.
+You must accept the terms and conditions on the AdColony website by registering in order to legally use the AdColony SDK. U.S. based companies will need to complete the W-9 form and send it to us, as well as complete the section on payment information on clients.adcolony.com, before publisher payments can be issued.
 
 
 Contact Us:
