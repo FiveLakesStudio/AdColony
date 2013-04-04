@@ -179,12 +179,6 @@ extern NSString *const  ADC_USER_EDUCATION_GRADUATE_DEGREE;     //user has been 
 
 //This returns one of the unique device identifiers used by AdColony
 //This identifier should remain constant across the lifetime of an iOS device
-//The identifier is the device UDID
-//For server-side V4VC integrations, this is the value that will be sent as the URL parameter named 'udid'
-+ ( NSString * ) getUDID;
-
-//This returns one of the unique device identifiers used by AdColony
-//This identifier should remain constant across the lifetime of an iOS device
 //The identifier is an ODIN-1 id ( which is based on a sha1 hash of the binary MAC address of the device's WiFi interface)
 //For server-side V4VC integrations, this is the value that will be sent as the URL parameter named 'odin1'
 + ( NSString * ) getODIN1;

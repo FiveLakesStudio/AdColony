@@ -1,8 +1,7 @@
 ADCOLONY PREMIUM MOBILE VIDEO ADVERTISING NETWORK
 --------------------------------------------------
-Modified: 2013/01/09
-SDK Version: 2.0.1.32
-
+Modified: 2013/03/25
+SDK Version: 2.0.1.33 (does not use Apple UDID)
 
 AdColony SDK 2.0 Package Contents:
 ---------------------------------------
@@ -21,6 +20,10 @@ Getting Started with AdColony:
 ----------------------------------
 First time and returning users should review the AdColony SDK Quick Start Guide, as the AdColony API has been changed (please refer to the change log for details). 
 This file is available as a PDF in the "Documentation" folder and contains everything you need to start integrating AdColony into your app quickly.
+
+2.0.1.33 Summary Change Log:
+----------------------------------
+-Removed all usage of Apple's UDID in accordance with Apple policy
 
 2.0 Summary Change Log:
 ----------------------------------
