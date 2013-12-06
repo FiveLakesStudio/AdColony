@@ -94,43 +94,32 @@
 // Try to play an ad from an interstitial zone, using a delegate to control the app's music
 -(IBAction)triggerVideo
 {
-    [AdColony playVideoAdForSlot:1 withDelegate:self];
+	[AdColony playVideoAdForZone:@"vzf8fb4670a60e4a139d01b5" withDelegate:self];
 }
 
 // Try to play an ad from a V4VC zone, using the same delegate and both of the default popups
 -(IBAction)triggerV4VC
 {
-    [AdColony playVideoAdForSlot:2 withDelegate:self withV4VCPrePopup:YES andV4VCPostPopup:YES];
+	[AdColony playVideoAdForZone:@"vzf8e4e97704c4445c87504e" withDelegate:self withV4VCPrePopup:YES andV4VCPostPopup:YES];
 }
 
 #pragma mark -
-#pragma mark AdColonyTakeoverAdDelegate
-// Callback activated when an AdColony video ad takes over the screen
-//
-// This implementation stops the background music
--(void)adColonyTakeoverBeganForZone:(NSString *)zone
-{
-    [audio stop];
+#pragma mark AdColonyAdDelegate
+
+// Is called when AdColony has taken control of the device screen and is about to begin showing an ad
+// Apps should implement app-specific code such as pausing a game and turning off app music
+- ( void ) onAdColonyAdStartedInZone:( NSString * )zoneID {
+	[audio stop];
 }
 
-// Callback activated when an AdColony video ad is exited by the user
-//
-// This implementation resumes the background music
--(void)adColonyTakeoverEndedForZone:(NSString *)zone withVC:(BOOL)withVirtualCurrencyAward
-{
-    [audio play];
-}
-
-// Callback activated when AdColony is unable to display an ad, which can occur when:
-//  1. AdColony has not yet finished preparing ads for display
-//  2. The zone has hit its session cap or V4VC cap
-//  3. The zone was disabled on the adcolony.com dashboard
-//  4. There was no available ad fill
-//
-// This implementation logs a message for record-keeping
--(void)adColonyVideoAdNotServedForZone:(NSString *)zone
-{
-    NSLog(@"AdColony did not play an ad for zone %@", zone);
+// Is called when AdColony has finished trying to show an ad, either successfully or unsuccessfully
+// If shown == YES, an ad was displayed and apps should implement app-specific code such as unpausing a game and restarting app music
+- ( void ) onAdColonyAdAttemptFinished:(BOOL)shown inZone:( NSString * )zoneID {
+	if (shown) {
+		[audio play];
+	} else {
+		NSLog(@"AdColony did not play an ad for zone %@", zoneID);
+	}
 }
 
 @end

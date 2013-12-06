@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		261BC9AF160BFE4B00886BCB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9AE160BFE4B00886BCB /* StoreKit.framework */; };
+		261BC9AF160BFE4B00886BCB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9AE160BFE4B00886BCB /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		261BC9B2160BFE5100886BCB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9B1160BFE5100886BCB /* CoreMedia.framework */; };
 		261BC9B4160BFE5500886BCB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9B3160BFE5500886BCB /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2627432F16F3E1790065E45E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2627432E16F3E1790065E45E /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2627433216F3E17F0065E45E /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2627433116F3E17F0065E45E /* libz.1.2.5.dylib */; };
 		265A1C041607B2DA00041715 /* coin-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 265A1BFD1607B2DA00041715 /* coin-ipad.png */; };
 		265A1C051607B2DA00041715 /* coin-ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 265A1BFE1607B2DA00041715 /* coin-ipad@2x.png */; };
 		265A1C061607B2DA00041715 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 265A1BFF1607B2DA00041715 /* coin.png */; };
@@ -20,6 +22,9 @@
 		268E053D162615D000D69B86 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268E053B162615D000D69B86 /* EventKit.framework */; };
 		268E053E162615D000D69B86 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268E053C162615D000D69B86 /* EventKitUI.framework */; };
 		268E0541162615D700D69B86 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268E0540162615D700D69B86 /* MessageUI.framework */; };
+		26AB63BA17B457660063DEB5 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB63B917B457660063DEB5 /* AdColony.framework */; };
+		26AB63BC17B4577E0063DEB5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB63BB17B4577E0063DEB5 /* AudioToolbox.framework */; };
+		26AB63BE17B457AE0063DEB5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AB63BD17B457AE0063DEB5 /* QuartzCore.framework */; };
 		26BF851D160111BE00FEFD2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BF851C160111BE00FEFD2C /* UIKit.framework */; };
 		26BF851F160111BE00FEFD2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BF851E160111BE00FEFD2C /* Foundation.framework */; };
 		26BF8521160111BE00FEFD2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BF8520160111BE00FEFD2C /* CoreGraphics.framework */; };
@@ -46,7 +51,6 @@
 		26BF85621601146F00FEFD2C /* btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26BF85561601146F00FEFD2C /* btn@2x.png */; };
 		26BF8566160115CE00FEFD2C /* bgmusicloop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26BF8565160115CE00FEFD2C /* bgmusicloop.mp3 */; };
 		26BF856C1601168600FEFD2C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BF856B1601168600FEFD2C /* AVFoundation.framework */; };
-		26D6D9A6160D6CDA00BE86F2 /* libAdColony.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D6D9A5160D6CDA00BE86F2 /* libAdColony.a */; };
 		26D6D9E2160D6FE900BE86F2 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D6D9E1160D6FE900BE86F2 /* icon_57.png */; };
 		26D6D9E5160D6FEC00BE86F2 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D6D9E4160D6FEC00BE86F2 /* icon_114.png */; };
 		26D6D9E7160D6FF100BE86F2 /* icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D6D9E6160D6FF100BE86F2 /* icon_72.png */; };
@@ -57,6 +61,8 @@
 		261BC9AE160BFE4B00886BCB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		261BC9B1160BFE5100886BCB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		261BC9B3160BFE5500886BCB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		2627432E16F3E1790065E45E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2627433116F3E17F0065E45E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		265A1BFD1607B2DA00041715 /* coin-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coin-ipad.png"; sourceTree = "<group>"; };
 		265A1BFE1607B2DA00041715 /* coin-ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coin-ipad@2x.png"; sourceTree = "<group>"; };
 		265A1BFF1607B2DA00041715 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
@@ -67,6 +73,9 @@
 		268E053B162615D000D69B86 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		268E053C162615D000D69B86 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		268E0540162615D700D69B86 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		26AB63B917B457660063DEB5 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../AdColony.framework; sourceTree = "<group>"; };
+		26AB63BB17B4577E0063DEB5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		26AB63BD17B457AE0063DEB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		26BF8518160111BE00FEFD2C /* AC Advanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC Advanced.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BF851C160111BE00FEFD2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26BF851E160111BE00FEFD2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,12 +108,10 @@
 		26BF8565160115CE00FEFD2C /* bgmusicloop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusicloop.mp3; sourceTree = "<group>"; };
 		26BF856B1601168600FEFD2C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		26BF85711601259300FEFD2C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		26D6D9A4160D6CDA00BE86F2 /* AdColonyPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdColonyPublic.h; sourceTree = "<group>"; };
-		26D6D9A5160D6CDA00BE86F2 /* libAdColony.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdColony.a; sourceTree = "<group>"; };
-		26D6D9E1160D6FE900BE86F2 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
-		26D6D9E4160D6FEC00BE86F2 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
-		26D6D9E6160D6FF100BE86F2 /* icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_72.png; sourceTree = "<group>"; };
-		26D6D9E8160D6FF400BE86F2 /* icon_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_144.png; sourceTree = "<group>"; };
+		26D6D9E1160D6FE900BE86F2 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_57.png; path = ../icon_57.png; sourceTree = "<group>"; };
+		26D6D9E4160D6FEC00BE86F2 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_114.png; path = ../icon_114.png; sourceTree = "<group>"; };
+		26D6D9E6160D6FF100BE86F2 /* icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_72.png; path = ../icon_72.png; sourceTree = "<group>"; };
+		26D6D9E8160D6FF400BE86F2 /* icon_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_144.png; path = ../icon_144.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,20 +119,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				268E0541162615D700D69B86 /* MessageUI.framework in Frameworks */,
+				2627433216F3E17F0065E45E /* libz.1.2.5.dylib in Frameworks */,
+				26AB63BA17B457660063DEB5 /* AdColony.framework in Frameworks */,
+				261BC9B4160BFE5500886BCB /* AdSupport.framework in Frameworks */,
+				26AB63BC17B4577E0063DEB5 /* AudioToolbox.framework in Frameworks */,
+				26BF856C1601168600FEFD2C /* AVFoundation.framework in Frameworks */,
+				26BF8521160111BE00FEFD2C /* CoreGraphics.framework in Frameworks */,
+				261BC9B2160BFE5100886BCB /* CoreMedia.framework in Frameworks */,
+				26BF85471601122900FEFD2C /* CoreTelephony.framework in Frameworks */,
 				268E053D162615D000D69B86 /* EventKit.framework in Frameworks */,
 				268E053E162615D000D69B86 /* EventKitUI.framework in Frameworks */,
-				261BC9B4160BFE5500886BCB /* AdSupport.framework in Frameworks */,
-				261BC9B2160BFE5100886BCB /* CoreMedia.framework in Frameworks */,
-				261BC9AF160BFE4B00886BCB /* StoreKit.framework in Frameworks */,
-				26BF856C1601168600FEFD2C /* AVFoundation.framework in Frameworks */,
-				26BF85491601123200FEFD2C /* SystemConfiguration.framework in Frameworks */,
-				26BF85471601122900FEFD2C /* CoreTelephony.framework in Frameworks */,
-				26BF85451601121B00FEFD2C /* MediaPlayer.framework in Frameworks */,
-				26BF851D160111BE00FEFD2C /* UIKit.framework in Frameworks */,
 				26BF851F160111BE00FEFD2C /* Foundation.framework in Frameworks */,
-				26BF8521160111BE00FEFD2C /* CoreGraphics.framework in Frameworks */,
-				26D6D9A6160D6CDA00BE86F2 /* libAdColony.a in Frameworks */,
+				26BF85451601121B00FEFD2C /* MediaPlayer.framework in Frameworks */,
+				268E0541162615D700D69B86 /* MessageUI.framework in Frameworks */,
+				26AB63BE17B457AE0063DEB5 /* QuartzCore.framework in Frameworks */,
+				2627432F16F3E1790065E45E /* Social.framework in Frameworks */,
+				261BC9AF160BFE4B00886BCB /* StoreKit.framework in Frameworks */,
+				26BF85491601123200FEFD2C /* SystemConfiguration.framework in Frameworks */,
+				26BF851D160111BE00FEFD2C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,11 +146,6 @@
 		26BF850D160111BE00FEFD2C = {
 			isa = PBXGroup;
 			children = (
-				26D6D9E8160D6FF400BE86F2 /* icon_144.png */,
-				26D6D9E6160D6FF100BE86F2 /* icon_72.png */,
-				26D6D9E4160D6FEC00BE86F2 /* icon_114.png */,
-				26D6D9E1160D6FE900BE86F2 /* icon_57.png */,
-				26D6D9A3160D6CDA00BE86F2 /* AdColony Library */,
 				26BF8522160111BE00FEFD2C /* AdColonyAdvanced */,
 				26BF851B160111BE00FEFD2C /* Frameworks */,
 				26BF8519160111BE00FEFD2C /* Products */,
@@ -157,18 +163,23 @@
 		26BF851B160111BE00FEFD2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				268E0540162615D700D69B86 /* MessageUI.framework */,
-				268E053B162615D000D69B86 /* EventKit.framework */,
-				268E053C162615D000D69B86 /* EventKitUI.framework */,
+				2627433116F3E17F0065E45E /* libz.1.2.5.dylib */,
+				26AB63B917B457660063DEB5 /* AdColony.framework */,
 				261BC9B3160BFE5500886BCB /* AdSupport.framework */,
-				261BC9B1160BFE5100886BCB /* CoreMedia.framework */,
-				261BC9AE160BFE4B00886BCB /* StoreKit.framework */,
+				26AB63BB17B4577E0063DEB5 /* AudioToolbox.framework */,
 				26BF856B1601168600FEFD2C /* AVFoundation.framework */,
 				26BF8520160111BE00FEFD2C /* CoreGraphics.framework */,
+				261BC9B1160BFE5100886BCB /* CoreMedia.framework */,
 				26BF85461601122900FEFD2C /* CoreTelephony.framework */,
-				26BF85481601123200FEFD2C /* SystemConfiguration.framework */,
+				268E053B162615D000D69B86 /* EventKit.framework */,
+				268E053C162615D000D69B86 /* EventKitUI.framework */,
 				26BF851E160111BE00FEFD2C /* Foundation.framework */,
 				26BF85441601121B00FEFD2C /* MediaPlayer.framework */,
+				268E0540162615D700D69B86 /* MessageUI.framework */,
+				26AB63BD17B457AE0063DEB5 /* QuartzCore.framework */,
+				2627432E16F3E1790065E45E /* Social.framework */,
+				261BC9AE160BFE4B00886BCB /* StoreKit.framework */,
+				26BF85481601123200FEFD2C /* SystemConfiguration.framework */,
 				26BF851C160111BE00FEFD2C /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -205,6 +216,10 @@
 		26BF854A1601129900FEFD2C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				26D6D9E8160D6FF400BE86F2 /* icon_144.png */,
+				26D6D9E6160D6FF100BE86F2 /* icon_72.png */,
+				26D6D9E4160D6FEC00BE86F2 /* icon_114.png */,
+				26D6D9E1160D6FE900BE86F2 /* icon_57.png */,
 				265A1BFD1607B2DA00041715 /* coin-ipad.png */,
 				265A1BFE1607B2DA00041715 /* coin-ipad@2x.png */,
 				265A1BFF1607B2DA00041715 /* coin.png */,
@@ -234,16 +249,6 @@
 				26BF8565160115CE00FEFD2C /* bgmusicloop.mp3 */,
 			);
 			name = Audio;
-			sourceTree = "<group>";
-		};
-		26D6D9A3160D6CDA00BE86F2 /* AdColony Library */ = {
-			isa = PBXGroup;
-			children = (
-				26D6D9A4160D6CDA00BE86F2 /* AdColonyPublic.h */,
-				26D6D9A5160D6CDA00BE86F2 /* libAdColony.a */,
-			);
-			name = "AdColony Library";
-			path = ../../Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,14 +424,15 @@
 		26BF853A160111BE00FEFD2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../..\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdColonyAdvanced/AdColonyAdvanced-Prefix.pch";
 				INFOPLIST_FILE = "AdColonyAdvanced/AdColonyAdvanced-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Library\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "AC Advanced";
 				WRAPPER_EXTENSION = app;
@@ -436,14 +442,15 @@
 		26BF853B160111BE00FEFD2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../..\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdColonyAdvanced/AdColonyAdvanced-Prefix.pch";
 				INFOPLIST_FILE = "AdColonyAdvanced/AdColonyAdvanced-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Library\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "AC Advanced";
 				WRAPPER_EXTENSION = app;

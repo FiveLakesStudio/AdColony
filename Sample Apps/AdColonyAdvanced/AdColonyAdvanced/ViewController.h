@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AdColonyPublic.h"
+#import <AdColony/AdColony.h>
 
-@interface ViewController : UIViewController <AdColonyTakeoverAdDelegate>
+@interface ViewController : UIViewController <AdColonyAdDelegate>
 @end

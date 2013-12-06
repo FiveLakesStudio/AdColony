@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		261BC9A2160BFDF200886BCB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9A1160BFDF200886BCB /* StoreKit.framework */; };
+		261BC9A2160BFDF200886BCB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9A1160BFDF200886BCB /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		261BC9A5160BFDF600886BCB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9A4160BFDF600886BCB /* AVFoundation.framework */; };
 		261BC9A7160BFDFC00886BCB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9A6160BFDFC00886BCB /* CoreMedia.framework */; };
 		261BC9A9160BFE0000886BCB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261BC9A8160BFE0000886BCB /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2627432616F3E11C0065E45E /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2627432516F3E11C0065E45E /* libz.1.2.5.dylib */; };
+		2627432916F3E1230065E45E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2627432816F3E1230065E45E /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		264700941794A24A00B40568 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264700931794A24A00B40568 /* AdColony.framework */; };
+		264700961794A2A300B40568 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264700951794A2A300B40568 /* AudioToolbox.framework */; };
+		264700981794A2D900B40568 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264700971794A2D900B40568 /* QuartzCore.framework */; };
 		265A1BCB1607A39000041715 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265A1BC91607A39000041715 /* bg.jpg */; };
 		265A1BCC1607A39000041715 /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 265A1BCA1607A39000041715 /* bg@2x.jpg */; };
 		265A1BD91607A3D400041715 /* btn-ipad-press.png in Resources */ = {isa = PBXBuildFile; fileRef = 265A1BD11607A3D400041715 /* btn-ipad-press.png */; };
@@ -45,7 +50,6 @@
 		26C28CFD15DC5B7D00C2DDE0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C28CFC15DC5B7D00C2DDE0 /* CoreTelephony.framework */; };
 		26C28CFF15DC5B8400C2DDE0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C28CFE15DC5B8400C2DDE0 /* MediaPlayer.framework */; };
 		26C28D0115DC5B8A00C2DDE0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C28D0015DC5B8A00C2DDE0 /* SystemConfiguration.framework */; };
-		26D6D9B8160D6DF400BE86F2 /* libAdColony.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D6D9B7160D6DF400BE86F2 /* libAdColony.a */; };
 		26D6D9C4160D6F5C00BE86F2 /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D6D9C3160D6F5C00BE86F2 /* icon_57.png */; };
 		26D6D9C6160D6F6B00BE86F2 /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D6D9C5160D6F6B00BE86F2 /* icon_114.png */; };
 		26D6D9C8160D6F7800BE86F2 /* icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 26D6D9C7160D6F7800BE86F2 /* icon_72.png */; };
@@ -57,6 +61,11 @@
 		261BC9A4160BFDF600886BCB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		261BC9A6160BFDFC00886BCB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		261BC9A8160BFE0000886BCB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		2627432516F3E11C0065E45E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		2627432816F3E1230065E45E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		264700931794A24A00B40568 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../../AdColony.framework; sourceTree = "<group>"; };
+		264700951794A2A300B40568 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		264700971794A2D900B40568 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		265A1BC91607A39000041715 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		265A1BCA1607A39000041715 /* bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg@2x.jpg"; sourceTree = "<group>"; };
 		265A1BD11607A3D400041715 /* btn-ipad-press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-ipad-press.png"; sourceTree = "<group>"; };
@@ -97,8 +106,6 @@
 		26C28CFC15DC5B7D00C2DDE0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		26C28CFE15DC5B8400C2DDE0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		26C28D0015DC5B8A00C2DDE0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		26D6D9B6160D6DF400BE86F2 /* AdColonyPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdColonyPublic.h; sourceTree = "<group>"; };
-		26D6D9B7160D6DF400BE86F2 /* libAdColony.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdColony.a; sourceTree = "<group>"; };
 		26D6D9C3160D6F5C00BE86F2 /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_57.png; path = ../icon_57.png; sourceTree = "<group>"; };
 		26D6D9C5160D6F6B00BE86F2 /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_114.png; path = ../icon_114.png; sourceTree = "<group>"; };
 		26D6D9C7160D6F7800BE86F2 /* icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_72.png; path = ../icon_72.png; sourceTree = "<group>"; };
@@ -110,20 +117,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				268E05361626159200D69B86 /* MessageUI.framework in Frameworks */,
-				268E05341626158E00D69B86 /* EventKitUI.framework in Frameworks */,
-				268E05311626158A00D69B86 /* EventKit.framework in Frameworks */,
+				2627432616F3E11C0065E45E /* libz.1.2.5.dylib in Frameworks */,
+				264700941794A24A00B40568 /* AdColony.framework in Frameworks */,
 				261BC9A9160BFE0000886BCB /* AdSupport.framework in Frameworks */,
-				261BC9A7160BFDFC00886BCB /* CoreMedia.framework in Frameworks */,
+				264700961794A2A300B40568 /* AudioToolbox.framework in Frameworks */,
 				261BC9A5160BFDF600886BCB /* AVFoundation.framework in Frameworks */,
+				26C28CD915DC5B1E00C2DDE0 /* CoreGraphics.framework in Frameworks */,
+				261BC9A7160BFDFC00886BCB /* CoreMedia.framework in Frameworks */,
+				26C28CFD15DC5B7D00C2DDE0 /* CoreTelephony.framework in Frameworks */,
+				268E05311626158A00D69B86 /* EventKit.framework in Frameworks */,
+				268E05341626158E00D69B86 /* EventKitUI.framework in Frameworks */,
+				26C28CD715DC5B1E00C2DDE0 /* Foundation.framework in Frameworks */,
+				26C28CFF15DC5B8400C2DDE0 /* MediaPlayer.framework in Frameworks */,
+				268E05361626159200D69B86 /* MessageUI.framework in Frameworks */,
+				264700981794A2D900B40568 /* QuartzCore.framework in Frameworks */,
+				2627432916F3E1230065E45E /* Social.framework in Frameworks */,
 				261BC9A2160BFDF200886BCB /* StoreKit.framework in Frameworks */,
 				26C28D0115DC5B8A00C2DDE0 /* SystemConfiguration.framework in Frameworks */,
-				26C28CFF15DC5B8400C2DDE0 /* MediaPlayer.framework in Frameworks */,
-				26C28CFD15DC5B7D00C2DDE0 /* CoreTelephony.framework in Frameworks */,
 				26C28CD515DC5B1E00C2DDE0 /* UIKit.framework in Frameworks */,
-				26C28CD715DC5B1E00C2DDE0 /* Foundation.framework in Frameworks */,
-				26C28CD915DC5B1E00C2DDE0 /* CoreGraphics.framework in Frameworks */,
-				26D6D9B8160D6DF400BE86F2 /* libAdColony.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +174,6 @@
 		26C28CC515DC5B1E00C2DDE0 = {
 			isa = PBXGroup;
 			children = (
-				26D6D9B5160D6DF400BE86F2 /* AdColony Library */,
 				26C28CDA15DC5B1E00C2DDE0 /* AdColonyV4VC */,
 				26C28CD315DC5B1E00C2DDE0 /* Frameworks */,
 				26C28CD115DC5B1E00C2DDE0 /* Products */,
@@ -181,17 +191,22 @@
 		26C28CD315DC5B1E00C2DDE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				268E05351626159200D69B86 /* MessageUI.framework */,
-				268E05331626158E00D69B86 /* EventKitUI.framework */,
-				268E05301626158A00D69B86 /* EventKit.framework */,
+				2627432516F3E11C0065E45E /* libz.1.2.5.dylib */,
+				264700931794A24A00B40568 /* AdColony.framework */,
 				261BC9A8160BFE0000886BCB /* AdSupport.framework */,
-				261BC9A6160BFDFC00886BCB /* CoreMedia.framework */,
 				261BC9A4160BFDF600886BCB /* AVFoundation.framework */,
-				261BC9A1160BFDF200886BCB /* StoreKit.framework */,
+				264700951794A2A300B40568 /* AudioToolbox.framework */,
 				26C28CD815DC5B1E00C2DDE0 /* CoreGraphics.framework */,
+				261BC9A6160BFDFC00886BCB /* CoreMedia.framework */,
 				26C28CFC15DC5B7D00C2DDE0 /* CoreTelephony.framework */,
+				268E05301626158A00D69B86 /* EventKit.framework */,
+				268E05331626158E00D69B86 /* EventKitUI.framework */,
 				26C28CD615DC5B1E00C2DDE0 /* Foundation.framework */,
 				26C28CFE15DC5B8400C2DDE0 /* MediaPlayer.framework */,
+				268E05351626159200D69B86 /* MessageUI.framework */,
+				264700971794A2D900B40568 /* QuartzCore.framework */,
+				2627432816F3E1230065E45E /* Social.framework */,
+				261BC9A1160BFDF200886BCB /* StoreKit.framework */,
 				26C28D0015DC5B8A00C2DDE0 /* SystemConfiguration.framework */,
 				26C28CD415DC5B1E00C2DDE0 /* UIKit.framework */,
 			);
@@ -223,16 +238,6 @@
 				26C28CE215DC5B1E00C2DDE0 /* AdColonyV4VC-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		26D6D9B5160D6DF400BE86F2 /* AdColony Library */ = {
-			isa = PBXGroup;
-			children = (
-				26D6D9B6160D6DF400BE86F2 /* AdColonyPublic.h */,
-				26D6D9B7160D6DF400BE86F2 /* libAdColony.a */,
-			);
-			name = "AdColony Library";
-			path = ../../Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,14 +412,15 @@
 		26C28CF215DC5B1E00C2DDE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../..\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdColonyV4VC/AdColonyV4VC-Prefix.pch";
 				INFOPLIST_FILE = "AdColonyV4VC/AdColonyV4VC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Library\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "AC V4VC";
 				WRAPPER_EXTENSION = app;
@@ -424,14 +430,15 @@
 		26C28CF315DC5B1E00C2DDE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../..\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdColonyV4VC/AdColonyV4VC-Prefix.pch";
 				INFOPLIST_FILE = "AdColonyV4VC/AdColonyV4VC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Library\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "AC V4VC";
 				WRAPPER_EXTENSION = app;

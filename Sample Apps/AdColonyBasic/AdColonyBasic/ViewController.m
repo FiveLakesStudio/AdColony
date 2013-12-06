@@ -6,7 +6,8 @@
 //
 
 #import "ViewController.h"
-#import "AdColonyPublic.h"
+
+#import <AdColony/AdColony.h>
 
 @interface ViewController ()
 @end
@@ -26,7 +27,7 @@
 #pragma mark AdColony-specific
 -(IBAction)triggerVideo
 {
-    [AdColony playVideoAdForSlot:1];
+    [AdColony playVideoAdForZone:@"vzf8fb4670a60e4a139d01b5" withDelegate:nil];
 }
 
 @end

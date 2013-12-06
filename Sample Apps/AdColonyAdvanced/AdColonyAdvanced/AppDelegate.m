@@ -27,84 +27,51 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
-    // Initialize AdColony only once, on initial launch
-    [AdColony initAdColonyWithDelegate:self];
+    // Configure AdColony only once, on initial launch
+	[AdColony configureWithAppID:@"appbdee68ae27024084bb334a" zoneIDs:@[@"vzf8fb4670a60e4a139d01b5", @"vzf8e4e97704c4445c87504e"] delegate:self logging:YES];
     
     return YES;
 }
 
 #pragma mark -
-#pragma mark AdColony-specific
+#pragma mark AdColony V4VC
 
-// Provide the AdColony app ID for your application
-// This can be retrieved from your account on adcolony.com
--(NSString *)adColonyApplicationID
-{
-    return @"appbdee68ae27024084bb334a"; // AdColony app ID
-}
-
-// Provide a dictionary of AdColony zone IDs for all zones in use throughout the app.
-// These can be retrieved from your account on adcolony.com
-// Slot numbers are arbitrary integers
--(NSDictionary *)adColonyAdZoneNumberAssociation
-{
-    return [NSDictionary dictionaryWithObjectsAndKeys:
-            @"vzf8fb4670a60e4a139d01b5", [NSNumber numberWithInt:1], // AdColony interstitial zone ID, slot number
-            @"vzf8e4e97704c4445c87504e", [NSNumber numberWithInt:2], // AdColony V4VC zone ID, slot number
-            nil];
-}
-
-// Callback activated when currency was awarded
+// Callback activated when a V4VC currency reward succeeds or fails
 // This implementation is designed for client-side virtual currency without a server
 // It uses NSUserDefaults for persistent client-side storage of the currency balance
 // For applications with a server, contact the server to retrieve an updated currency balance
--(void)adColonyVirtualCurrencyAwardedByZone:(NSString *)zone currencyName:(NSString *)name currencyAmount:(int)amount {
-    NSLog(@"AdColony zone %@ awarded %i %@", zone, amount, name);
-    
-    NSUserDefaults* storage = [NSUserDefaults standardUserDefaults];
-    
-    // Get currency balance from persistent storage and update it
-    NSNumber* wrappedBalance = [storage objectForKey:kCurrencyBalance];
-    NSUInteger balance = wrappedBalance && [wrappedBalance isKindOfClass:[NSNumber class]] ? [wrappedBalance unsignedIntValue] : 0;
-    balance += amount;
-    
-    // Persist the currency balance
-    [storage setValue:[NSNumber numberWithUnsignedInt:balance] forKey:kCurrencyBalance];
-    [storage synchronize];
-    
-    // Post a notification so the rest of the app knows the balance changed
-    [[NSNotificationCenter defaultCenter] postNotificationName:kCurrencyBalanceChange object:nil];
+// On success, posts an NSNotification so the rest of the app can update the UI
+// On failure, posts an NSNotification so the rest of the app can disable V4VC UI elements
+- ( void ) onAdColonyV4VCReward:(BOOL)success currencyName:(NSString*)currencyName currencyAmount:(int)amount inZone:(NSString*)zoneID {
+	NSLog(@"AdColony zone %@ reward %i %i %@", zoneID, success, amount, currencyName);
+	
+	if (success) {
+		NSUserDefaults* storage = [NSUserDefaults standardUserDefaults];
+		
+		// Get currency balance from persistent storage and update it
+		NSNumber* wrappedBalance = [storage objectForKey:kCurrencyBalance];
+		NSUInteger balance = wrappedBalance && [wrappedBalance isKindOfClass:[NSNumber class]] ? [wrappedBalance unsignedIntValue] : 0;
+		balance += amount;
+		
+		// Persist the currency balance
+		[storage setValue:[NSNumber numberWithUnsignedInt:balance] forKey:kCurrencyBalance];
+		[storage synchronize];
+		
+		// Post a notification so the rest of the app knows the balance changed
+		[[NSNotificationCenter defaultCenter] postNotificationName:kCurrencyBalanceChange object:nil];
+	} else {
+		[[NSNotificationCenter defaultCenter] postNotificationName:kZoneOff object:nil];
+	}
 }
 
-// Callback activated when a currency award failed; we do not recommend displaying the reason to users
-// This implementation notifies other parts of the app via NSNotification so that they can disable V4VC UI elements
--(void)adColonyVirtualCurrencyNotAwardedByZone:(NSString *)zone currencyName:(NSString *)name currencyAmount:(int)amount reason:(NSString *)reason {
-    NSLog(@"AdColony zone %@ failed to award %i %@ with reason %@", zone, amount, name, reason);
+#pragma mark -
+#pragma mark AdColony ad fill
+- ( void ) onAdColonyAdAvailabilityChange:(BOOL)available inZone:(NSString*) zoneID {
+	if(available) {
+		[[NSNotificationCenter defaultCenter] postNotificationName:kZoneReady object:nil];
+	} else {
+		[[NSNotificationCenter defaultCenter] postNotificationName:kZoneLoading object:nil];
+	}
 }
-
-
--(void)adColonyNoVideoFillInZone:(NSString *)zone
-{
-    [[NSNotificationCenter defaultCenter] postNotificationName:kZoneOff object:nil];
-}
-
--(void)adColonyVideoAdsReadyInZone:(NSString *)zone
-{
-    [[NSNotificationCenter defaultCenter] postNotificationName:kZoneReady object:nil];
-}
-
--(void)adColonyVideoAdsNotReadyInZone:(NSString *)zone
-{
-    [[NSNotificationCenter defaultCenter] postNotificationName:kZoneLoading object:nil];
-}
-
-
-// Provide a logging level for AdColony
-// This implementation enables helpful console log messages
--(NSString *)adColonyLoggingStatus
-{
-    return AdColonyLoggingOn;
-}
-
 
 @end
