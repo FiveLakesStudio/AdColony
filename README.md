@@ -1,7 +1,11 @@
 AdColony iOS SDK
 ==================================
-Modified: 2013/11/18  
-SDK Version: 2.2.4  
+Modified: 2014/10/30  
+SDK Version: 2.4.13  
+
+To Download:
+----------------------------------
+The simplest way to obtain the AdColony iOS SDK is to click the "Download ZIP" button located in the right-hand navigation pane of the Github repository page.
 
 Contains:
 ----------------------------------
@@ -14,7 +18,37 @@ Contains:
 
 Getting Started with AdColony:
 ----------------------------------
-First time and returning users should review the [quick start guide](https://github.com/AdColony/AdColony-iOS-SDK/wiki) because the API and usage of our iOS SDK have changed with this release.
+New and returning users should review the [quick start guide](https://github.com/AdColony/AdColony-iOS-SDK/wiki), which contains detailed integration instructions.
+
+2.4.13 Change Log:
+----------------------------------
+* Fully compatible with iOS 8.1
+* Stylistic improvements to in-video engagement feature
+* Fixed rare black screen on iPad Airs running iOS 8
+* Fixed first-time install crash bug caused by Unity 4.5
+* Miscellaneous bug fixes
+
+2.4.12 Change Log:
+----------------------------------
+* Fixed memory leak caused by UIWebView on iOS 8
+* Addressed multiple conflicts with Unity plugin
+* Improved orientation functionality
+
+2.4.10 Change Log:
+----------------------------------
+* Fully tested against the iOS 8 Gold Master
+* Refinements and optimizations to AdColony Instant-Feed
+* Bug fixes 
+
+2.3.12 Change Log:
+----------------------------------
+* Initial public release of AdColony Instant-Feed
+* New requirement: minimum Xcode Deployment Target of iOS 5.0
+* New public class AdColonyNativeAdView which implements AdColony Instant-Feed
+* AdColony class new method to request AdColonyNativeAdView objects
+* Removed collection of OpenUDID, ODIN1, and MAC-SHA1 device identifiers on iOS 7+
+* Removed collection of IDFV device identifier altogether
+* Bug fixes and threading improvements
 
 2.2.4 Change Log:
 ----------------------------------
@@ -61,7 +95,9 @@ Included are three sample apps to use as examples and for help on AdColony integ
 
 Legal Requirements:
 ----------------------------------
-You must accept the terms and conditions on the AdColony website by registering in order to legally use the AdColony SDK. U.S. based companies will need to complete the W-9 form and send it to us, as well as complete the section on payment information on clients.adcolony.com, before publisher payments can be issued.
+By downloading the AdColony SDK, you are granted a limited, non-commercial license to use and review the SDK solely for evaluation purposes.  If you wish to integrate the SDK into any commercial applications, you must register an account with [AdColony](https://clients.adcolony.com/signup) and accept the terms and conditions on the AdColony website.
+
+Note that U.S. based companies will need to complete the W-9 form and send it to us before publisher payments can be issued.
 
 
 Contact Us:
